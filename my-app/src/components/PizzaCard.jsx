@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Badge, Button} from 'react-bootstrap;'
+import { Card, Badge, Button} from 'react-bootstrap'
 
 export function PizzaCard({ data, setOrdered }) {
     return (
