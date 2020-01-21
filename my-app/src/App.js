@@ -25,7 +25,7 @@ function App() {
       {ordered && <Confirmation toggle= {setOrdered} />}
       <Row>
         {pizzas.map(data => (
-          <Col xs={3} className="mb-5" key={`${data.id}`}>
+          <Col lg={6} className="mb-5" key={`${data.id}`}>
             <PizzaCard data={data} setOrdered={displayConfirmation} />
           </Col>
         ))}
