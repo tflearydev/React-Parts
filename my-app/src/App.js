@@ -15,7 +15,7 @@ function App() {
 
       setTimeout(() => {
         setOrdered(false);
-      }, 3000)
+      }, 3000);
     }
 
   return (

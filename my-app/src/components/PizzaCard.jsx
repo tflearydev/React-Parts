@@ -14,7 +14,7 @@ export function PizzaCard({ data, setOrdered }) {
                 </div>
                 <Card.Text className="text-secondary">{data.desc}</Card.Text>
                 <Button
-                    onCLick={() => setOrdered()}
+                    onClick={() => setOrdered()}
                     className="mt-auto font-weight-bold"
                     variant="success"
                     block
@@ -23,5 +23,5 @@ export function PizzaCard({ data, setOrdered }) {
                     </Button>
             </Card.Body>
         </Card>
-    )
+    );
 }
