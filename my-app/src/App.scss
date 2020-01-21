@@ -21,3 +21,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.card, .badge {
+    font-size: 16px;
+}
+
+.card .text-secondary {
+    line-height: 25px;
+}
+
+.toast.show {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 10; 
+}
