@@ -1,9 +1,22 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
+
+import { Container, Row, Col } from 'react-bootstrap'; 
+import { PizzaCard } from './components/PizzaCard';
+import { Confirmation } from './components/Confirmation'
+// import pizzas from '.data';
 
 function App() {
   return (
-    <p>React Bootstrap</p>
+    <>
+    <Confirmation />
+    <Container>
+      <Row>
+        <p>Hello There</p>
+      </Row>
+    </Container>
+    </>
   );
 }
 
