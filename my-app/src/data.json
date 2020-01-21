@@ -3,7 +3,7 @@
     {
         "id": 1,
         "name": "Chicago Pizza",
-        "image": "/images/chi.png",
+        "image": "chi.png",
         "desc": "The pan in which it is baked gives the pizza its characteristally high edge which provides ample spave for large amounts of cheese and a chunky tomato sauce.",
         "price": 9
     },
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Chicago Pizza",
-        "image": "/images/chi.png",
+        "image": "chi.jpg",
         "desc": "The pan in which it is baked gives the pizza its characteristally high edge which provides ample spave for large amounts of cheese and a chunky tomato sauce.",
         "price": 9
     },
