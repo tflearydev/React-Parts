@@ -60,7 +60,7 @@ function App() {
     />
     <Carousel.Caption>
       <h3 className="caro-text">Your Parts, Exactly <br></br>When You Need Them!</h3>
-      <p>New & Improved Search and Shipping</p>
+      <p className="caro-small">New & Improved Search and Shipping</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -72,7 +72,7 @@ function App() {
 
     <Carousel.Caption>
     <h3 className="caro-text">Your Parts, Exactly <br></br>When You Need Them!</h3>
-      <p>New & Improved Search and Shipping</p>
+      <p className="caro-small">New & Improved Search and Shipping</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
