@@ -8,6 +8,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { PizzaCard } from './components/PizzaCard';
 import { Confirmation } from './components/Confirmation';
 import pizzas from './data';
+import trucks from './trucks.jpg'
 
 function App() {
     const [ordered, setOrdered] = useState(false);
@@ -51,36 +52,36 @@ function App() {
   <Carousel.Item>
     <img
       className="d-block w-100 caro"
-      src="https://hankeringforhistory.com/wp-content/uploads/18-wheeler.jpg"
+      src={trucks}
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3 className="caro-text">Your Parts, Exactly When You Need Them!</h3>
+      <p className="caro-text">New & Improved Search and Shipping</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100 caro"
-      src="https://hankeringforhistory.com/wp-content/uploads/18-wheeler.jpg"
+      src={trucks}
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h3 className="caro-text">Your Parts, Exactly When You Need Them!</h3>
+      <p className="caro-text">New & Improved Search and Shipping</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100 caro"
-      src="https://hankeringforhistory.com/wp-content/uploads/18-wheeler.jpg"
+      src={trucks}
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <h3 className="caro-text">Your Parts, Exactly When You Need Them!</h3>
+      <p className="caro-text">New & Improved Search and Shipping</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
