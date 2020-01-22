@@ -8,7 +8,8 @@ import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from 'react-boots
 import { PizzaCard } from './components/PizzaCard';
 import { Confirmation } from './components/Confirmation';
 import pizzas from './data';
-import trucks from './trucks.jpg'
+import trucks from './trucks.jpg';
+import trucklogo from './trucklogo.png';
 
 function App() {
     const [ordered, setOrdered] = useState(false);
@@ -24,7 +25,13 @@ function App() {
   return (
 <>
 <Navbar bg="dark" variant="dark" sticky="top">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Navbar.Brand href="#home"><img
+        alt=""
+        src={trucklogo}
+        width="30"
+        height="30"
+        className="d-inline-block align-middle"
+      />{' '}<span className="nav-text">U-Part</span></Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#features">Features</Nav.Link>
