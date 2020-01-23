@@ -24,31 +24,35 @@ function App() {
 
   return (
 <>
-<Navbar bg="dark" variant="dark" sticky="top">
-    <Navbar.Brand href="#home"><img
+
+
+<Navbar bg="dark" variant="dark" expand="lg">
+<Navbar.Brand href="#home"><img
         alt=""
         src={trucklogo}
         width="30"
         height="30"
         className="d-inline-block align-middle"
       />{' '}<span className="nav-text">U-Part</span></Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+      <Nav.Link href="#link">About</Nav.Link>
+      <NavDropdown title="Parts" id="basic-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Hood</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Windshields</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Fenders</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.4">More</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-info">Search</Button>
+      <Button variant="outline-success">Search</Button>
     </Form>
-  </Navbar>
+  </Navbar.Collapse>
+</Navbar>
 
 
 <Carousel>
