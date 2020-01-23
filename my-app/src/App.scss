@@ -43,19 +43,32 @@ body {
 
 .caro {
     height: 80vh;
-    // background: linear-gradient(#004092, #020202, transparent)
+
     
 }
 
+
+
 .caro-text {
-    // margin-left: -200px;
-    margin-top: -300px;
+    
+    margin-top: -400px;
     font-weight: 600;
     font-size: 5vw;
+    padding-top: 40px;
+    
 
+}
+
+.gradient {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+    
 }
 
 .caro-small {
     font-size: 2vw;
+    padding-bottom:40px;
+    
 }
 

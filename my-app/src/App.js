@@ -59,8 +59,10 @@ function App() {
       alt="First slide"
     />
     <Carousel.Caption>
+      <div className="gradient">
       <h3 className="caro-text">Your Parts, Exactly <br></br>When You Need Them!</h3>
       <p className="caro-small">New & Improved Search and Shipping</p>
+      </div>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -71,8 +73,10 @@ function App() {
     />
 
     <Carousel.Caption>
+    <div className="gradient">
     <h3 className="caro-text">Your Parts, Exactly <br></br>When You Need Them!</h3>
       <p className="caro-small">New & Improved Search and Shipping</p>
+      </div>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -83,8 +87,10 @@ function App() {
     />
 
     <Carousel.Caption>
+    <div className="gradient">
     <h3 className="caro-text">Your Parts, Exactly <br></br>When You Need Them!</h3>
       <p className="caro-small">New & Improved Search and Shipping</p>
+      </div>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
