@@ -59,6 +59,13 @@ body {
 
 }
 
+@media screen and (max-width: 850px) {
+    .caro-text {
+        font-size: 7vw;
+        margin-top: -350px;
+    }
+}
+
 .gradient {
     background-color: rgba(0,0,0,0.5);
     border-radius: 10px;
@@ -70,5 +77,12 @@ body {
     font-size: 2vw;
     padding-bottom:40px;
     
+}
+@media screen and (max-width: 850px) {
+    .caro-small {
+        font-size: 4vw;
+        margin-top: 20px
+        
+    }
 }
 
