@@ -10,9 +10,9 @@ ____
 ## Quick Site Glance
 ___
 
-<img src='assets/site.png' alt='home' height=350 width=450/>
+<img src='assets/site.png' alt='home' height=350 width=550/>
 
-<img src='assets/site2.png' alt='home' height=350 width=450/>
+<img src='assets/site2.png' alt='home' height=350 width=550/>
 
 
 
