@@ -11,6 +11,7 @@ import pizzas from './data';
 import trucks from './trucks.jpg';
 import trucklogo from './trucklogo.png';
 
+
 function App() {
     const [ordered, setOrdered] = useState(false);
 
@@ -114,8 +115,12 @@ function App() {
       </Row>
     </Container>
 
+
+  
+   
+
     </>
- 
+
     
   );
 }
