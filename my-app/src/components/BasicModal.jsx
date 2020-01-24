@@ -18,10 +18,10 @@ class BasicModal extends Component {
     const { open } = this.state;
     return (
       <div>
-        <Button onClick={this.toggle}>Click Me!</Button>
-        <Modal open={open} toggle={this.toggle}>
-          <ModalHeader>Header</ModalHeader>
-          <ModalBody><span role="img">👋</span> Hello there!</ModalBody>
+        <Button onClick={this.toggle} className="but">Contact Us</Button>
+        <Modal open={open} toggle={this.toggle} className="mod">
+          <ModalHeader><span role="img">👋</span> Hello there! Shoot us a quick email for questions.</ModalHeader>
+          <ModalBody className="email">quickhelp@upart.com</ModalBody>
         </Modal>
       </div>
     );
