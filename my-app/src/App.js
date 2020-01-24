@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "shards-ui/dist/css/shards.min.css"
 import "./App.scss";
+
 
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
@@ -13,6 +15,7 @@ import {
   NavDropdown
 } from "react-bootstrap";
 import { PizzaCard } from "./components/PizzaCard";
+import  BasicModal  from "./components/BasicModal";
 import { Confirmation } from "./components/Confirmation";
 import pizzas from "./data";
 import trucks from "./trucks.jpg";
@@ -115,6 +118,7 @@ function App() {
 
       <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
+          <BasicModal />
           <small>Copyright &copy; U-Part</small>
         </div>
       </footer>
