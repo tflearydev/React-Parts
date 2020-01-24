@@ -30,10 +30,11 @@ body {
     line-height: 25px;
 }
 
-.toast.show {
+.toast {
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    left: 10px;
+    bottom: -500px;
+  
     z-index: 10; 
 }
 
