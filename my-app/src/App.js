@@ -73,7 +73,7 @@ function App() {
           <Carousel.Caption>
             <div className="gradient">
               <h3 className="caro-text">
-                Your Parts, Exactly <br></br>When You Need Them!
+                <div className="caro-top">Your Parts, Exactly</div> <br></br>When You Need Them!
               </h3>
               <p className="caro-small">New & Improved Search and Shipping</p>
             </div>
@@ -85,7 +85,7 @@ function App() {
           <Carousel.Caption>
             <div className="gradient">
               <h3 className="caro-text">
-                Your Parts, Exactly <br></br>When You Need Them!
+              <div className="caro-top">Your Parts, Exactly</div><br></br>When You Need Them!
               </h3>
               <p className="caro-small">New & Improved Search and Shipping</p>
             </div>
@@ -97,7 +97,7 @@ function App() {
           <Carousel.Caption>
             <div className="gradient">
               <h3 className="caro-text">
-                Your Parts, Exactly <br></br>When You Need Them!
+              <div className="caro-top">Your Parts, Exactly</div> <br></br>When You Need Them!
               </h3>
               <p className="caro-small">New & Improved Search and Shipping</p>
             </div>

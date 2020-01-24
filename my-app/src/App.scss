@@ -51,13 +51,18 @@ body {
 
 
 .caro-text {
-    
+    color: white;
     margin-top: -400px;
     font-weight: 600;
     font-size: 5vw;
-    padding-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     
 
+}
+
+.caro-top {
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 850px) {
@@ -76,7 +81,7 @@ body {
 
 .caro-small {
     font-size: 2vw;
-    padding-bottom:40px;
+    padding-bottom:50px;
     
 }
 @media screen and (max-width: 850px) {
