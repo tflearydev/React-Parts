@@ -12,6 +12,8 @@ import trucks from './trucks.jpg';
 import trucklogo from './trucklogo.png';
 
 
+
+
 function App() {
     const [ordered, setOrdered] = useState(false);
 
@@ -117,11 +119,15 @@ function App() {
 
 
   
-   
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; U-Part</small>
+    </div>
+  </footer>
 
     </>
 
-    
+   
   );
 }
 
