@@ -11,8 +11,6 @@ import {
 
   function SimpleNav() {
 
-  
-
 
       return (
         <Navbar bg="dark" variant="dark" expand="lg" sticky="top">

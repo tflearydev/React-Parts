@@ -4,7 +4,7 @@ import BasicModal from "../components/BasicModal";
 function Foot() {
   
     return (
-      <footer id="sticky-footer" className="py-4 bg-dark text-white-50">
+      <footer id="sticky-footer" className="py-2 bg-dark text-white-50">
         <div className="container text-center">
           <BasicModal />
           <small>Copyright &copy; U-Part</small>
