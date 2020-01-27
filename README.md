@@ -7,7 +7,7 @@ Each piece of this application is broken down into separate components (Navbar, 
 
 ## Technologies Used:
 ____
-* HTML, CSS, JavaScript, React-Bootstrap, React.js
+* HTML, JSX, CSS, SCSS, JavaScript, React-Bootstrap, React.js, Styled Components, React-Animations
 
 ## Quick Site Glance
 ___
