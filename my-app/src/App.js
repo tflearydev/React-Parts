@@ -72,9 +72,9 @@ function App() {
           <img className="d-block w-100 caro" src={trucks} alt="First slide" />
           <Carousel.Caption>
             <div className="gradient">
-              <h3 className="caro-text">
-                <div className="caro-top">Your Parts, Exactly</div> <br></br>When You Need Them!
-              </h3>
+              <p className="caro-text">
+                Your Parts, Exactly When You Need Them!
+              </p>
               <p className="caro-small">New & Improved Search and Shipping</p>
             </div>
           </Carousel.Caption>
@@ -84,9 +84,9 @@ function App() {
 
           <Carousel.Caption>
             <div className="gradient">
-              <h3 className="caro-text">
-              <div className="caro-top">Your Parts, Exactly</div><br></br>When You Need Them!
-              </h3>
+              <p className="caro-text">
+              Your Parts, Exactly When You Need Them!
+              </p>
               <p className="caro-small">New & Improved Search and Shipping</p>
             </div>
           </Carousel.Caption>
@@ -96,9 +96,9 @@ function App() {
 
           <Carousel.Caption>
             <div className="gradient">
-              <h3 className="caro-text">
-              <div className="caro-top">Your Parts, Exactly</div> <br></br>When You Need Them!
-              </h3>
+              <p className="caro-text">
+              Your Parts, Exactly When You Need Them!
+              </p>
               <p className="caro-small">New & Improved Search and Shipping</p>
             </div>
           </Carousel.Caption>
