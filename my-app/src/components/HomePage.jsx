@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
-import "../App.scss";
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "../components/Carousel";
@@ -30,8 +28,19 @@ function Home() {
         <SimpleNav />
   
         <Carousel />
+
 <section>
-        <Search />
+<ReactCSSTransitionGroup
+          transitionName="example"
+          transitionAppear={true}
+          transitionAppearTimeout={500}
+          transitionEnter={false}
+          transitionLeave={false}>
+
+<Search />
+        </ReactCSSTransitionGroup>
+
+        
         </section>
   
         <Container>
