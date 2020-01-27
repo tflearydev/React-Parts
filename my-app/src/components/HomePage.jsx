@@ -11,6 +11,7 @@ import PizzaCard from "../components/PizzaCard";
 import  Footer from "../components/Footer"
 import  Confirmation  from "../components/Confirmation";
 import pizzas from "../data";
+import Search from "../components/Search"
 
 
 function Home() {
@@ -29,6 +30,8 @@ function Home() {
         <SimpleNav />
   
         <Carousel />
+
+        <Search />
   
         <Container>
           {ordered && <Confirmation toggle={setOrdered} />}
