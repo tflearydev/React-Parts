@@ -2,7 +2,7 @@ import React from 'react';
 import { Toast } from 'react-bootstrap';
 //a lot of this bootstrap stuff is in docs, dont worry too much
 
-export function Confirmation({ toggle }) {
+function Confirmation({ toggle }) {
     return (
         <Toast onClose={() => toggle(false)} animation={true}>
             <Toast.Header>
@@ -16,3 +16,5 @@ export function Confirmation({ toggle }) {
         </Toast>
     );
 }
+
+export default Confirmation;

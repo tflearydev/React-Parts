@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Carousel from "react-bootstrap/Carousel";
 import trucks from "../trucks.jpg";
 
-class Caro extends Component {
-    render () {
+function Caro() {
+  
         return (
 
             <Carousel>
@@ -45,6 +45,6 @@ class Caro extends Component {
       </Carousel>
         )
     }
-}
+
 
 export default Caro;

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import BasicModal from "../components/BasicModal";
 
-class Foot extends Component {
-  render() {
+function Foot() {
+  
     return (
       <footer id="sticky-footer" className="py-4 bg-dark text-white-50">
         <div className="container text-center">
@@ -12,6 +12,6 @@ class Foot extends Component {
       </footer>
     );
   }
-}
+
 
 export default Foot;

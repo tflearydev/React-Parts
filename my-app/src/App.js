@@ -7,9 +7,9 @@ import "./App.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "./components/Carousel";
 import  SimpleNav  from "./components/SimpleNav";
-import { PizzaCard } from "./components/PizzaCard";
+import PizzaCard from "./components/PizzaCard";
 import  Footer from "./components/Footer"
-import { Confirmation } from "./components/Confirmation";
+import  Confirmation  from "./components/Confirmation";
 import pizzas from "./data";
 
 

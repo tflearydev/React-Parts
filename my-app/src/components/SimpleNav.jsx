@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     Navbar,
     Nav,
@@ -9,9 +9,9 @@ import {
   } from "react-bootstrap";
   import trucklogo from "../trucklogo.png";
 
-  class SimpleNav extends Component {
+  function SimpleNav() {
 
-  render() {
+  
 
 
       return (
@@ -49,6 +49,6 @@ import {
       </Navbar>
       )
       };
-    }
+    
 
     export default SimpleNav;
