@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Form, Container, Row, Col } from "react-bootstrap";
-import { MDBCol, MDBFormInline, MDBBtn } from "mdbreact";
+import { MDBBtn } from "mdbreact";
 
 function Search() {
   return (

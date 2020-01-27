@@ -30,14 +30,15 @@ function Home() {
         <SimpleNav />
   
         <Carousel />
-
+<section>
         <Search />
+        </section>
   
         <Container>
           {ordered && <Confirmation toggle={setOrdered} />}
           <Row>
             {pizzas.map(data => (
-              <Col lg={3} className="mb-4 mt-3" key={`${data.id}`}>
+              <Col lg={3} className="mb-4 mt-5" key={`${data.id}`}>
                 <PizzaCard data={data} setOrdered={displayConfirmation} />
               </Col>
             ))}
