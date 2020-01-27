@@ -10,6 +10,7 @@ import  Footer from "../components/Footer"
 import  Confirmation  from "../components/Confirmation";
 import pizzas from "../data";
 import Search from "../components/Search"
+import styled from 'styled-components'
 
 
 function Home() {
