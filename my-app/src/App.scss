@@ -123,7 +123,9 @@ body {
  }
   
  section {
-     background: url('./trucks.jpg')
+     background: url('./trucks.jpg');
+     background-size: cover;
+     background-attachment: fixed;
 
  }
 
