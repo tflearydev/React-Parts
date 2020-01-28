@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Badge, Button} from 'react-bootstrap'
 
 
-function PizzaCard({ data, setOrdered }) {
+function PartCard({ data, setOrdered }) {
     return (
         <Card className="h-100 shadow-sm bg-white rounded">
             <Card.Img variant="top" src={data.image} />
@@ -27,4 +27,4 @@ function PizzaCard({ data, setOrdered }) {
     );
 }
 
-export default PizzaCard;
+export default PartCard;

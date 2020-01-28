@@ -5,10 +5,10 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "../components/Carousel";
 import  SimpleNav  from "../components/SimpleNav";
-import PizzaCard from "./PartCard";
+import PartCard from "./PartCard";
 import  Footer from "../components/Footer"
 import  Confirmation  from "../components/Confirmation";
-import pizzas from "../data";
+import parts from "../data";
 import Search from "../components/Search"
 
 
@@ -46,9 +46,9 @@ function Home() {
         <Container>
           {ordered && <Confirmation toggle={setOrdered} />}
           <Row>
-            {pizzas.map(data => (
+            {parts.map(data => (
               <Col lg={3} className="mb-4 mt-5" key={`${data.id}`}>
-                <PizzaCard data={data} setOrdered={displayConfirmation} />
+                <PartCard data={data} setOrdered={displayConfirmation} />
               </Col>
             ))}
           </Row>
