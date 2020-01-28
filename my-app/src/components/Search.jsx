@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Form, Container, Row, Col } from "react-bootstrap";
 import { MDBBtn } from "mdbreact";
 
+
 function Search() {
   return (
     <Container>
