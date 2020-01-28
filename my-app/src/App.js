@@ -9,21 +9,26 @@ import "./App.scss";
 import HomePage from './components/HomePage'
 
 
+//Context Providers
+import CategoriesContextProvider from './context/CategoriesContext';
+
 
 function App() {
 
 
   return (
     <>
-      <Router>
+      <CategoriesContextProvider>
+        <Router>
 
-      <Switch>
-            <Route exact path='/' component={HomePage} />
-          
-          </Switch>
+        <Switch>
+              <Route exact path='/' component={HomePage} />
+            
+            </Switch>
 
 
-      </Router>
+        </Router>
+      </CategoriesContextProvider>
     </>
   );
 }

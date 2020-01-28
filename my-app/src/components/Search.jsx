@@ -1,9 +1,29 @@
-import React from "react";
+import React, {useEffect, useState, useContext, lazy, Suspense} from "react";
 import { Card, Form, Container, Row, Col } from "react-bootstrap";
 import { MDBBtn } from "mdbreact";
 
+//Data Context
+import {CategoriesContext} from '../context/CategoriesContext';
+import {fetchCategories} from '../api/categories-api';
+
 
 function Search() {
+  const [stateCategories, dispatchCategories] = useContext(CategoriesContext);
+
+  useEffect(() => {
+    if(!stateCategories.dataLoaded){
+      dispatchCategories({type: 'IS_FETCHING', payload: true});
+      runFetchCategories();            
+    }
+
+
+  }, []);
+  
+  const runFetchCategories = async () => {
+    const categories_data = await fetchCategories();
+    dispatchCategories({type: 'LOAD_DATA', payload: categories_data});
+  }
+
   return (
     <Container>
       <Row className="justify-content-md-center">
@@ -12,16 +32,30 @@ function Search() {
             <Card.Body>
               <Form>
                 <Card.Title className="text-center">Search Parts</Card.Title>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                  <Form.Label>Category</Form.Label>
-                  <Form.Control as="select">
-                    <option>Any</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </Form.Control>
-                </Form.Group>
+
+                  {
+                    !stateCategories.dataLoaded ?
+                      (<p>Loading Data.....</p>)
+                    :
+                      (
+                        <Form.Group controlId="exampleForm.ControlInput1">
+                          <Form.Label>Category</Form.Label>
+                          <Form.Control as="select">
+                            <option value = "">Any</option>
+                            {
+                              stateCategories.data.map((obj) => (<option key={obj.id} value = {obj.id}>{obj.name}</option>))
+                            }
+
+
+                          </Form.Control>
+                        </Form.Group>
+                      )
+
+                  }
+
+                
+
+
                 <Form.Group controlId="exampleForm.ControlSelect1">
                   <Form.Label>Manufacturer</Form.Label>
                   <Form.Control as="select">

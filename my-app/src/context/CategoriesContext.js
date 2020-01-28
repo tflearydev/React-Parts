@@ -1,18 +1,19 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useReducer, useState } from 'react';
 import CategoriesReducer from '../reducers/categories/CategoriesReducer';
 export const CategoriesContext = createContext();
 
 const CategoriesContextProvider = (props) => {
-    const [categoriesState, setCategoriesState] = useState({
+    const [state, setState] = useState({
         isFetching: false,
         dataLoaded: false,
         data: {}
         
     });
-    const [categoriesState, categoriesDispatch] = useReducer(CategoriesReducer, categoriesState);
+    //console.log(state);
+    const [stateCategories, dispatchCategories] = useReducer(CategoriesReducer, state);
 
     return(
-        <CategoriesContext.Provider value = {[categoriesState, categoriesDispatch]}>
+        <CategoriesContext.Provider value = {[stateCategories, dispatchCategories]}>
             {props.children}
         </CategoriesContext.Provider> 
         
