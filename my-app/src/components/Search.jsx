@@ -6,10 +6,18 @@ import { MDBBtn } from "mdbreact";
 import {CategoriesContext} from '../context/CategoriesContext';
 import {fetchCategories} from '../api/categories-api';
 
+import FormSelectInput from './FormSelectInput';
+
+//HOC
+import WithLoading from '../components/WithLoading';
+
+const WithLoadingCategories = WithLoading(FormSelectInput); 
+
+
 
 function Search() {
   const [stateCategories, dispatchCategories] = useContext(CategoriesContext);
-
+  
   useEffect(() => {
     if(!stateCategories.dataLoaded){
       dispatchCategories({type: 'IS_FETCHING', payload: true});
@@ -21,7 +29,8 @@ function Search() {
   
   const runFetchCategories = async () => {
     const categories_data = await fetchCategories();
-    dispatchCategories({type: 'LOAD_DATA', payload: categories_data});
+      dispatchCategories({type: 'LOAD_DATA', payload: categories_data});
+  
   }
 
   return (
@@ -32,29 +41,10 @@ function Search() {
             <Card.Body>
               <Form>
                 <Card.Title className="text-center">Search Parts</Card.Title>
-
-                  {
-                    !stateCategories.dataLoaded ?
-                      (<p>Loading Data.....</p>)
-                    :
-                      (
-                        <Form.Group controlId="exampleForm.ControlInput1">
-                          <Form.Label>Category</Form.Label>
-                          <Form.Control as="select">
-                            <option value = "">Any</option>
-                            {
-                              stateCategories.data.map((obj) => (<option key={obj.id} value = {obj.id}>{obj.name}</option>))
-                            }
-
-
-                          </Form.Control>
-                        </Form.Group>
-                      )
-
-                  }
-
-                
-
+                  <Form.Group controlId="exampleForm.ControlInput1">
+                    <Form.Label>Category</Form.Label>
+                    <WithLoadingCategories state = {stateCategories}  />
+                  </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlSelect1">
                   <Form.Label>Manufacturer</Form.Label>
