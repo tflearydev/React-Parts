@@ -46,10 +46,27 @@ function Search() {
             <Card.Body>
               <Form>
                 <Card.Title className="text-center">Search Parts</Card.Title>
-                  <Form.Group controlId="exampleForm.ControlInput1">
-                    <Form.Label>Category</Form.Label>
-                    <WithLoadingCategories state = {stateCategories}  />
-                  </Form.Group>
+
+                {
+                    !stateCategories.dataLoaded ?
+                      (<p>Loading Data.....</p>)
+                    :
+                      (
+                        <Form.Group controlId="exampleForm.ControlInput1">
+                          <Form.Label>Category</Form.Label>
+                          <Form.Control as="select">
+                            <option value = "">Any</option>
+                            {
+                              stateCategories.data.map((obj) => (<option key={obj.id} value = {obj.id}>{obj.name}</option>))
+                            }
+
+
+                          </Form.Control>
+                        </Form.Group>
+                      )
+
+                  }
+
 
                 <Form.Group controlId="exampleForm.ControlSelect1">
                   <Form.Label>Manufacturer</Form.Label>
