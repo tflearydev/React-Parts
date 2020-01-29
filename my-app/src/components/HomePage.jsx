@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 import { Container, Row, Col } from "react-bootstrap";
-import Carousel from "../components/Carousel";
+// import Carousel from "../components/Carousel";
 import SimpleNav from "../components/SimpleNav";
 import PartCard from "./PartCard";
 import Footer from "../components/Footer";

@@ -55,7 +55,6 @@ function Search() {
 
                 
 
-
                 <Form.Group controlId="exampleForm.ControlSelect1">
                   <Form.Label>Manufacturer</Form.Label>
                   <Form.Control as="select">
