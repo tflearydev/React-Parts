@@ -29,7 +29,12 @@ function Search() {
   
   const runFetchCategories = async () => {
     const categories_data = await fetchCategories();
+
+    setTimeout(() => {
       dispatchCategories({type: 'LOAD_DATA', payload: categories_data});
+
+    }, 2000);
+
   
   }
 
