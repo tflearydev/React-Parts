@@ -8,3 +8,12 @@ export const fetchCategories = async () =>{
 
 }
 
+
+export const fetchManufacturersApi = async (categoryid) =>{
+    const response = await fetch(apiConfig.url+'manufacturers' + '/' + categoryid);
+    const json = await response.json();
+    return json;
+
+}
+
+
