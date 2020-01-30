@@ -6,7 +6,8 @@ const CategoriesContextProvider = (props) => {
     const [state, setState] = useState({
         isFetching: false,
         dataLoaded: false,
-        data: {}
+        data: {},
+        selected_id: null
         
     });
     //console.log(state);

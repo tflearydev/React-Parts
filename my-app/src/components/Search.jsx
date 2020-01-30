@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext, lazy, Suspense} from "react";
+import React, {useEffect, useState, useContext, lazy, Suspense, useReducer} from "react";
 import { Card, Form, Container, Row, Col } from "react-bootstrap";
 import { MDBBtn } from "mdbreact";
 
@@ -21,9 +21,9 @@ const WithLoadingCategories = WithLoading(FormSelectInput);
 
 
 function Search(props) {
-  const [search_props] = props.search_props;
-  console.log(search_props);
+  const {search_props} = props;
   
+
 
   useEffect(() => {
     if(!search_props.stateCategories.dataLoaded){
@@ -35,28 +35,10 @@ function Search(props) {
   }, []);
   
 
-
-      console.log(response)
-      setManufacturerState({
-        isFetching: false,
-        data: response,
-        dataLoaded: true
-
-      })
-
-
-  }
-
-
-
-    
-      dispatchCategories({type: 'LOAD_DATA', payload: categories_data});
-
-   
+  
   
 
-  }
-
+  
   return (
     <Container>
       <Row className="justify-content-md-center">
@@ -67,16 +49,16 @@ function Search(props) {
                 <Card.Title className="text-center">Search Parts</Card.Title>
 
                 {
-                    !stateCategories.dataLoaded ?
+                    !search_props.stateCategories.dataLoaded ?
                       (<p>Loading Data.....</p>)
                     :
                       (
                         <Form.Group controlId="exampleForm.ControlInput1">
                           <Form.Label>Category</Form.Label>
-                          <Form.Control as="select" onChange={filterCategories}>
-                            <option value = "">Any</option>
+                          <Form.Control as="select" onChange={search_props.filterCategories}>
+                            <option key="null" value = "null">Any</option>
                             {
-                              stateCategories.data.map((obj) => (<option key={obj.id} value = {obj.id}>{obj.name}</option>))
+                              search_props.stateCategories.data.map((obj) => (<option key={obj.id} value = {obj.id}>{obj.name}</option>))
                             }
 
 
@@ -87,13 +69,16 @@ function Search(props) {
                   }
 
 
-                <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Group controlId="exampleForm.ControlSelect2">
                   <Form.Label>Manufacturer</Form.Label>
 
-
                   {
+
+
+
+
                     //Initial load
-                    !manufacturerState.isFetching && !manufacturerState.dataLoaded ?
+                    (search_props.manufacturerState.isFetching == false && search_props.manufacturerState.dataLoaded == false) ?
 
                       (
                         <Form.Control as="select">
@@ -103,23 +88,19 @@ function Search(props) {
                       
                     :
                     //fecthing
-                    (manufacturerState.isFetching == true)  ?
+                    (search_props.manufacturerState.isFetching == true)  ?
                         (<p>Loading Data.......</p>)
 
                         :
                         //Data loaded
-                        <Form.Control as="select">
-                        <option>Any</option>
+                        <Form.Control as="select" onChange={search_props.filterManufactuers}>
+                        <option value = "null" key="null">Any</option>
                         {
-                           manufacturerState.data.map((obj) => (<option key={obj.id} value = {obj.id}>{obj.name}</option>))
+                           search_props.manufacturerState.data.map((obj) => (<option key={obj.id} value = {obj.id}>{obj.name}</option>))
 
                         }
                         </Form.Control>
-
-
-                    
-
-                    
+ 
 
                   }
 
@@ -128,16 +109,7 @@ function Search(props) {
 
 
                 </Form.Group>
-                <Form.Group controlId="exampleForm.ControlSelect2">
-                  <Form.Label>Model</Form.Label>
-                  <Form.Control as="select">
-                    <option>Any</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </Form.Control>
-                </Form.Group>
+          
 
                 <div className="text-center">
                   <MDBBtn

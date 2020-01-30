@@ -6,6 +6,13 @@ const CategoriesReducer = (state, action) => {
                 isFetching: true
             };
 
+        case 'UPDATE_SELECTED_ID':
+            return {
+                ...state,
+                selected_id: action.payload
+            };
+        
+
         case 'LOAD_DATA':
             return {
                 ...state,
