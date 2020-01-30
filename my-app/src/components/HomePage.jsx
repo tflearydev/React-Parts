@@ -27,7 +27,6 @@ function Home() {
       <SimpleNav />
 
       {/* <Carousel /> */}
-
       <section>
         <ReactCSSTransitionGroup
           transitionName="example"

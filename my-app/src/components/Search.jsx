@@ -8,6 +8,8 @@ import {fetchCategories, fetchManufacturersApi} from '../api/categories-api';
 
 import FormSelectInput from './FormSelectInput';
 
+//Reducers
+import ManufacturersReducer from '../reducers/manufacturers/ManufacturersReducer';
 //HOC
 import WithLoading from '../components/WithLoading';
 
@@ -18,46 +20,21 @@ const WithLoadingCategories = WithLoading(FormSelectInput);
 
 
 
-function Search() {
-  const [stateCategories, dispatchCategories] = useContext(CategoriesContext);
-  const [manufacturerState, setManufacturerState] = useState({
+function Search(props) {
+  const [search_props] = props.search_props;
+  console.log(search_props);
+  
 
-    isFetching: false,
-    data: {},
-    dataLoaded: false
-
-  });
   useEffect(() => {
-    if(!stateCategories.dataLoaded){
-      dispatchCategories({type: 'IS_FETCHING', payload: true});
-      runFetchCategories();            
+    if(!search_props.stateCategories.dataLoaded){
+      search_props.dispatchCategories({type: 'IS_FETCHING', payload: true});
+      search_props.runFetchCategories();            
     }
 
 
   }, []);
   
 
-  const runFetchManufacturer = async (value) => {
-
-        const response = await fetchManufacturersApi(value);
-
-        return response;
-  }
-
-
-  const filterCategories = async (e) => {
-
-      let value = e.target.value; 
-    // alert(value)
-      if (value == "") {
-        return;
-      }
-
-      setManufacturerState({
-        isFetching: true,
-      })
-       
-      const response = await runFetchManufacturer(value);
 
       console.log(response)
       setManufacturerState({
@@ -71,15 +48,13 @@ function Search() {
   }
 
 
-  const runFetchCategories = async () => {
-    const categories_data = await fetchCategories();
 
     
       dispatchCategories({type: 'LOAD_DATA', payload: categories_data});
 
    
-
   
+
   }
 
   return (
