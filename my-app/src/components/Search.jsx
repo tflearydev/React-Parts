@@ -3,22 +3,17 @@ import { Card, Form, Container, Row, Col } from "react-bootstrap";
 import { MDBBtn } from "mdbreact";
 
 //Data Context
-import {CategoriesContext} from '../context/CategoriesContext';
-import {fetchCategories, fetchManufacturersApi} from '../api/categories-api';
+import { CategoriesContext } from "../context/CategoriesContext";
+import { fetchCategories, fetchManufacturersApi } from "../api/categories-api";
 
-import FormSelectInput from './FormSelectInput';
+import FormSelectInput from "./FormSelectInput";
 
 //Reducers
 import ManufacturersReducer from '../reducers/manufacturers/ManufacturersReducer';
 //HOC
-import WithLoading from '../components/WithLoading';
+import WithLoading from "../components/WithLoading";
 
-
-
-
-const WithLoadingCategories = WithLoading(FormSelectInput); 
-
-
+const WithLoadingCategories = WithLoading(FormSelectInput);
 
 function Search(props) {
   const {search_props} = props;
@@ -30,10 +25,7 @@ function Search(props) {
       search_props.dispatchCategories({type: 'IS_FETCHING', payload: true});
       search_props.runFetchCategories();            
     }
-
-
   }, []);
-  
 
   
   
