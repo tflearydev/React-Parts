@@ -37,7 +37,7 @@ function Home() {
           transitionLeave={false}
         >
           <Search />
-        </ReactCSSTransitionGroup>
+        </ReactCSSTransitionGroup> 
       </section>
 
       <Container>
