@@ -178,6 +178,7 @@ function Home() {
               <PartCard data={data} setOrdered={displayConfirmation} />
             </Col>
           ))}
+
         </Row>
       </Container>
       <Footer />

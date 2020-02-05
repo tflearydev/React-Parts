@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Badge, Button} from 'react-bootstrap'
+import { Card, Badge, Button, Container} from 'react-bootstrap'
 
 
 const mapImage = (category_id) => {
@@ -33,6 +33,7 @@ const mapImage = (category_id) => {
 
 function PartCard({ data, setOrdered }) {
     return (
+        <Container className="con">
         <Card className="h-100 shadow-sm bg-white rounded">
             <Card.Img variant="top" src={mapImage(data.category_id)} />
             <Card.Body className="d-flex flex-column">
@@ -53,6 +54,7 @@ function PartCard({ data, setOrdered }) {
                     </Button>
             </Card.Body>
         </Card>
+        </Container>
     );
 }
 
