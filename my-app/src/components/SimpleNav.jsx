@@ -22,8 +22,9 @@ import {
             height="30"
             className="d-inline-block align-middle"
           />{" "}
-          <span className="nav-text">U-Part</span>
+          
         </Navbar.Brand>
+        <span className="nav-text">U-Part</span>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
