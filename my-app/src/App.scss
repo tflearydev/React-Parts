@@ -83,6 +83,17 @@ body {
     }
 }
 
+.navbar {
+    padding: .75rem 4.5rem;
+}
+
+@media screen and (max-width: 420px) {
+    .navbar {
+        padding: .75rem 1.5rem;
+
+    }
+}
+
 @media screen and (max-width: 450px) {
     .caro-text {
         font-size: 7vw;
