@@ -32,7 +32,7 @@ function Search(props) {
 
   
   return (
-    <Container>
+    <Container className="parency">
       <Row className="justify-content-md-center">
         <Col lg="8">
           <Card className="search-card">
