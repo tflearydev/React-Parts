@@ -86,11 +86,13 @@ body {
 
 .navbar {
     padding: .75rem 4.5rem;
-    background-color: transparent;
+    // background-color: transparent;
 }
 
 .nav-link {
     font-weight: 900;
+    color: white !important;
+    
 }
 
 .nav-text {

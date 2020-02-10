@@ -13,7 +13,7 @@ import {
 
 
       return (
-        <Navbar expand="lg" sticky="top">
+        <Navbar expand="lg" sticky="top" bg="dark">
         <Navbar.Brand href="#home">
           <img
             alt=""

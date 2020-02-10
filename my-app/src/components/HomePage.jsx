@@ -181,6 +181,8 @@ function Home() {
 
         </Row>
       </Container>
+
+      
       <Footer />
     </>
   );
