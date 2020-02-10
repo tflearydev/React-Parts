@@ -10,11 +10,15 @@ import {
   import trucklogo from "../trucklogo.png";
   import  Drop  from '../components/Drop'
 
+  const navStyle = {
+    backgroundColor: "#72747A"
+  }
+
   function SimpleNav() {
 
 
       return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" style={navStyle}>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         
           <Nav className="mr-auto">
