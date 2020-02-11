@@ -169,6 +169,7 @@ body {
 
  }
 
+
  .example-appear {
     opacity: 0.01;
   }
@@ -199,5 +200,18 @@ body {
         
         
       }
+
+      .navbar-brand {
+          padding-top: 15px;
+          font-weight: 700;
+          
+      }
+      .app-title {
+          color: white;
+      }
+
+      .navbar {
+        padding: .3rem 4.5rem;
+    }
       
   
