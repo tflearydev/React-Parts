@@ -17,7 +17,6 @@ import {
 
   function SimpleNav() {
 
-
       return (
         <Navbar collapseOnSelect expand="lg" style={navStyle}>
         <Navbar.Brand href="#home">
