@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "antd": "^3.26.9",
     "mdbreact": "^4.25.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.12.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-animations": "^1.0.0",
