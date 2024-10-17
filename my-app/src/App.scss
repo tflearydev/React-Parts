@@ -143,7 +143,6 @@ body {
     .caro-small {
         font-size: 4vw;
         margin-top: 20px
-        
     }
 }
 
@@ -162,9 +161,7 @@ body {
      background: url('./trucks.jpg');
      background-size: cover;
      background-attachment: fixed;
-
  }
-
 
  .example-appear {
     opacity: 0.01;
@@ -174,7 +171,6 @@ body {
     opacity: 1;
     transition: opacity .5s ease-in;
   }
-
 
   //ant dropdown
   #components-dropdown-demo-dropdown-button .ant-dropdown-button {
@@ -187,14 +183,9 @@ body {
 
   .antbtn {
     
-  
         background-color: transparent !important;
         color: #C4D0D9 !important;
-        // marginTop: "100px",
         border: 2px solid #C4D0D9 !important;
-       
-        
-        
       }
 
       .navbar-brand {
