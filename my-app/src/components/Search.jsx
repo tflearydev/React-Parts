@@ -66,9 +66,6 @@ function Search(props) {
 
                   {
 
-
-
-
                     //Initial load
                     (search_props.manufacturerState.isFetching == false && search_props.manufacturerState.dataLoaded == false) ?
 
